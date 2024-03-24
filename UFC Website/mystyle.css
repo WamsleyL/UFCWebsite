@@ -1,0 +1,82 @@
+/*Editing the header and navigation menu to display on one line.*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li {
+    display: inline;
+    margin-right: 40px; /*Adds space between each element in the nav bar*/
+    
+}
+/*Positions the logo in the right spot*/
+header img{
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+nav ul li a{
+    font:bold;
+    color:black;
+    text-decoration: none;/*Removes underline from nav*/
+}
+nav ul li:nth-child(4) a {
+    background-color: red; /* Changes background color of the Contact Form link in the nav */
+}
+/*Align the text next to the img on one line*/
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+}
+.view-button {
+    text-decoration: none; /* Remove underline on the view button*/
+}
+
+.text {
+    margin-left: 10px; /*adds space between text*/
+}
+
+.image-container {
+    display: inline-block; /* Display images in a row */
+    margin-left: 50px; /* Add some space between images */
+    text-align:center;
+}
+
+
+.button {
+    margin-top: 5px; /* Add some space between the image and the view button */
+}
+.button a {
+    text-decoration: none; /*Removes underline on the button*/
+}
+
+/* CSS for footer */
+footer {
+    text-align: center; /* Center align the content */
+    background-color: darkgrey;
+}
+footer address,
+footer section {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 50px;}
+
+
+.news-container {
+    display: flex;
+    align-items: center; 
+}
+
+.news-text {
+    margin-left: 20px; 
+}
+
+
+h1 {
+    text-align: left;
+}
+
+.news-text p {
+    line-height: 1.5;
+}
